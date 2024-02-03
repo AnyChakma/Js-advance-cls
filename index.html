@@ -3,11 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JS Advance</title>
+    <title>JS practice</title>
 </head>
 <body>
-    <h1> Hello programmer</h1>
-    <script src="app.js">
+    <h1 id="title"> My name is <span id ="name">   Any Chakma</span></h1>
+    <script>
+        "use strict";
+        //this
+//   const person = {
+//     firstName : "John",
+//     lastName:"Doe",
+//     id : 5566,
+//     //fullNamelist :  this.firstName + this.lastName,
+//     fullName :function (){
+//      return  this.firstName + " " + this.lastName ;
+//     },
+    
+//   };
+//   let title = document.getElementById("name").innerText = person.fullName
+//   ();
+
+      const person = {
+    firstName : "John",
+    lastName:"Doe",
+    check : function(){
+        return this.firstName
+    },
+ 
+};
+const persontwo = {
+    firstName : "Bibi",
+    lastName:"Amina",
+   
+    check : function(){
+        return this.firstName
+    },
+ 
+};
+console.log(persontwo.check());
 
     </script>
 </body>
